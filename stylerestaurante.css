@@ -1,0 +1,1106 @@
+/*Tudo o que for colocado dentro dessa tag se aplicará na página inteira sem precisar ser referenciado*/
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(43, 67, 43);
+}
+
+@font-face {
+    font-family: princesaeosapo;
+    src: url("PrincesS\ AND\ THE\ FROG.ttf");
+  }
+/*******************************************************************************************************************************************/
+/*                                                             HEADER                                                                      */
+/*******************************************************************************************************************************************/
+img{
+    padding: 20px;
+}
+
+.suporte{
+    display: flex; /*Define o layout como flexível, permitindo que os elementos sejam dispostos em uma linha ou coluna*/
+    align-items: center; /*Alinha os itens verticalmente no centro*/
+    height: 200px; /*Define a autura do elemento*/
+}
+
+.suportecliente{
+    display: flex;
+    align-items: center;
+    color: white;
+    padding-right: 5px; /*Adiciona um espaçamento de 10 pixels a direita do elemento*/
+}
+
+.logo{
+    display: flex;
+    justify-content: end;/*Alinha os elementos horizontalmente no final(direita)*/
+    align-items: center;
+    padding-left: 100px;  /*Adiciona um espaçamento de 300 pixels a esquerda do elemento*/
+}
+
+.alinhar{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding-left: 100px;
+}
+
+/*******************************************************************************************************************************************/
+/*                                                               MENU                                                                      */
+/*******************************************************************************************************************************************/
+
+.menu{
+    list-style: none; /*Remover a formatação de lista*/
+    padding: 20px 0px 20px 0px; /*Adiciona um espaçamento de 20 pixels em cima e em abaixo e de 0 pixels dos lados*/
+    background-color: #695a49;
+    display:flex;
+    align-items: center;
+}
+
+.menu li{
+    display: inline; /*Faz com que os elemtos "li" sejam exibidos lado a lado*/
+}
+
+.menu li a{
+    color: white;
+    padding: 10px;
+    display: flex;
+    display: inline;
+    font-size: 1.3rem; /*Multiplica o tamanho real da imagem pelo valor colocado*/
+    color: white;
+    font-weight: 600; /*Definir o peso da fonte com 600*/
+    text-decoration: none; /*Remover a formatação sublinhada*/
+    text-transform: uppercase; /*Transforma o texto minúsculo em maiúsculo*/
+    position: relative; /*Define a posição do elemento como relative (abaixo do texto)*/
+}
+
+
+/*o pseudo-elemento nesse caso é a barrinha abaixo das palavras*/
+
+.menu a::after{ /*Definir um estilo para pseudo-elemento "::after" dos links <a> dentro de elementos com a classe "menu"*/
+    content: ''; /*Define o conteúdo do pseudo-elemento como vazio*/
+    width: 3.5rem;
+    height: 1px;
+    background-color: white;
+    position: absolute; /*Define a posição do pseudo-elemento como absoluta*/
+    bottom: -3px;/*Definir a posição do pseudo-elemento cpm 3 pixels abaixo do elemento <li> */
+    left: 50%;/*Definir a posição do pseudo-elemento como 50% a esquerda do elemento <li> */
+    transform: translate(-50%, 50%); /*Define a transformação do pseudo-elemento como uma translação de -50% a esquerda e 50% para cima*/
+    opacity:0; /*Definir a opacidade do pseudo-elemento como 0 (invisível)*/
+    transition: all 0.3s ease; /*Definir a transição do pseudo-elemento como uma animação de 0.3s com efeito ease*/
+}
+
+.menu a:hover::after{
+    opacity: 1;
+}
+
+.menu a:hover{
+    color: #f3d9b2;
+}
+
+/*******************************************************************************************************************************************/
+/*                                                         INICIA-SE O BANNER                                                              */
+/*******************************************************************************************************************************************/
+
+.banner{
+    background-image: linear-gradient(100deg, #000000, #00000020), url(imagens/a\ dream.jpg); /*Define a imagem do fundo com um gradiente com as cores selecionadas e uma imagem de capa*/
+    height: 700px;
+    background-size: cover; /*Define o tamanho da imagem do fundo*/
+    right: 150px;
+    padding: 200px 650px 0px 10px;
+    background-position: center; /*Define a posição da imagem de fundo*/
+}
+
+.txtbanner{
+    max-width: 700; /*Define a largura máxima*/
+    margin: 0 auto;
+}
+
+.txtbanner p{
+    color: white;
+    font-size: 1.2rem; /*Define o tamanho da fonte*/
+    margin-bottom: 1rem; /*Adiciona um espaçamento de 1rem embaixo do parágrafo*/
+    font-weight: 500;
+}
+
+.txtbanner h2{
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 500; 
+    line-height: 1.2;
+}
+
+.txtbanner a { /*Essa tag vai servir para criar o botão do saiba mais*/
+    margin-top: 2rem; /*Adiciona um espaçamento de 2rem em cima do link*/
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    display: inline-block; /*Define o layout do link como branco*/
+    padding: 1rem 3rem; /*Adiciona um espaçamento de 1 rem em cima e em baixo e 3rem dos lados do link*/
+    border-radius: 3rem; /*Definir a borda do link com um arredondamento*/
+}
+
+
+
+/*******************************************************************************************************************************************/
+/*                                                    CONTEÚDO DO MAIN (PRINCIPAL)                                                         */
+/*******************************************************************************************************************************************/
+
+.main-conteudo{
+    background-color: rgb(43, 67, 43);
+}
+
+/*******************************************************************************************************************************************/
+/*                                                               TAGS                                                                      */
+/*******************************************************************************************************************************************/
+
+.align{
+    display: flex;
+    grid-template-columns: repeat(4 1fr);
+    gap: 3rem;
+    padding: 3rem 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.base-conteudo{
+    display: flex;
+    grid-template-columns: repeat(4, 1fr); /*Define um modelo de grade com 4 colunas com larguras iguais*/
+    gap: 3rem; /*Adiciona um espaço entre as células da grade*/
+    padding: 3rem 0;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    border-radius: 1rem;
+    width: 300px;
+    background-color: white;
+    padding: 1.0rem 0;
+    box-shadow: 10px 5px 5px rgb(19, 19, 19);
+}
+
+.conteudo{
+    display: flex;
+    flex-direction: column; /*Define a direção flexível para coluna*/
+    gap: 0.2rem;
+}
+
+.conteudo span{
+    font-weight: 700; /*Define o peso da fonte (a intensidade da tonalidade da fonte)*/
+    font-size: 1.2rem;
+    color: black;
+}
+
+.conteudo p{
+    color: #d61515;
+    font-weight: 400;
+}
+
+/*******************************************************************************************************************************************/
+/*                                                               SOBRE                                                                     */
+/*******************************************************************************************************************************************/
+
+.titulosobre{
+    font-family: princesaeosapo;
+    font-size: 40px;
+    text-align: center;
+    color: white;
+    
+    
+}
+
+.just{
+    display: flex;
+    justify-items: center;
+    padding: 50px 150px;
+}
+
+.texto{
+    font-size: 14px;
+    text-align: justify;
+    align-items: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    color: white;
+}
+
+/*******************************************************************************************************************************************/
+/*                                                               DESTAQUES                                                                 */
+/*******************************************************************************************************************************************/
+
+.container-categoria{
+    display: flex;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+}
+
+.card-categoria{
+    height: 10rem;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    border-radius: 2rem;
+    gap: 1rem;
+}
+
+.categoria-beignets{
+    background-image: linear-gradient(#00000000, #00000080), url(imagens/tianacozinhando.jpg);
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    width: 350px;
+}
+
+.categoria-gumbo{
+    background-image: linear-gradient(#00000000, #00000080), url(imagens/gumbo.jpg);
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    width: 350px;
+}
+
+.categoria-cappuccino{
+    background-image: linear-gradient(#00000000, #00000080), url(imagens/waffles\ and\ chicken.jpg);
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    width: 350px;
+}
+
+.tipos{
+    display: flex;
+    flex-direction: column; 
+    margin-bottom: 3rem;
+    gap: 2rem;
+}
+
+.card-categoria p{
+    font-size: 2rem;
+    color: white;
+    text-transform: capitalize; /*Coloca em maiúsculo a primeira letra da palavra no texto*/
+    position: relative;/*Define a posição dos <p> elementos como relativa, o que nos permite posicionar o pseudo-elemento "::after" de forma absoluta*/
+}
+
+.card-categoria p::after{
+    content: ''; /*Define o conteúdo do pseudo-elemento como uma string vazia, necessária para criar o pseudo-elemento*/
+    width: 3.5rem;
+    height: 2px;
+    background-color: #fff;
+    position: absolute; /*Define a posição do pseudo-elemento como absoluta, o que nos permite posiciona-lo em relação ao elemento <p>*/
+    bottom: -1rem;
+    left: 50%;
+    transform: translate(-50%, 50%);
+}
+
+.card-categoria span{
+    font-size: 1.6rem;
+    color: #fff;
+    cursor: pointer; /*Define o formato do cursor como uma mão apontando ao passar o mouse sobre os elementos <span>*/
+}
+
+.card-categoria span:hover{
+    color: white;
+}
+
+/*******************************************************************************************************************************************/
+/*                                                              MELHORES PRODUTOS                                                          */
+/*******************************************************************************************************************************************/
+
+.top-produtos{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 3rem;
+    margin-top: 120px;
+}
+
+.conteiner-options{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 1rem;
+}
+
+
+.conteiner-options span{
+    color: #777;
+    background-color: #fff;
+    padding: 0.7rem 3rem;
+    font-size: 1.4rem;
+    text-transform: capitalize; /*Capitaliza o primeiro caractere de cada palavra*/
+    border-radius: 2rem;
+    cursor: pointer;
+}
+
+.conteiner-options span:hover{
+    background-color: #695A49;
+    color: #fff;
+}
+
+.conteiner-options span.active{
+    background-color: #695A49;
+    color: #fff;
+}
+
+.heading-1{
+    text-align: center;
+    font-weight: 500;
+    font-size: 3rem;
+    color: white;
+}
+
+.container-produtos{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    padding: 0 50px 50px 50px;
+}
+
+.card-product{
+    background-color: white;
+    padding: 1.5rem 2rem; /*Diminiur o padding para ajustar o tamanho da imagem*/
+    border-radius: 0.5rem;
+    cursor: pointer;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+.conteiner-img{
+    position: relative;
+}
+
+.conteiner-img img{
+    width: 100%;
+}
+
+.conteiner-img .discount{
+    position: absolute;
+    left: 0;
+    color:white;
+    padding: 2px 1.2rem;
+    border-radius: 1rem;
+    font-size: 1.2rem;
+}
+
+.card-product:hover .discount{
+    background-color: #000000;
+}
+
+/*******************************************************************************************************************************************/
+/*                                                              ANIMAÇÃO BOTÕES                                                            */
+/*******************************************************************************************************************************************/
+
+.button-group{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    position: absolute; /*Posição absoluta para posicionamento específico*/
+    top: 0; /*Alinhamento no topo*/
+    right: -3rem; /*Alinhamento na direita*/
+    z-index: -1; /*Define a sobreposição inicial*/
+    transition: all 0.4s ease; /*Animação de transição suave*/
+}
+
+.button-group span{
+    border: 1px solid #695A49;
+    padding: 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+.button-group span:hover{
+    background-color: #695A49;
+}
+
+.button-group span i{
+    font-size: 1.5rem;
+    color: #695A49;
+}
+
+.button-group span:hover i{
+    color: white;
+}
+
+.card-product:hover .button-group{
+    z-index: 0;
+    right: -1rem;
+}
+
+
+/*******************************************************************************************************************************************/
+/*                                                              INICIA AS ESTRELAS                                                          */
+/*******************************************************************************************************************************************/
+
+
+.content-card-product {
+    display: grid;
+    justify-items: center; /*Centraliza os itens horizontalmente*/
+    grid-template-columns: 1fr 1fr; /*Cria duas colunas de tamanho igual*/
+    grid-template-rows: repeat(4, min-content); /*Cria 4 linha de altura mínima*/
+    row-gap: 1rem; /*Espaçamento vertical entre as linhas*/
+}
+
+.stars{
+    grid-row: 1/2; /*Ocupa a primeira linha da grade*/
+    grid-column: 1/-1; /*Ocupa todas as colunas da grade*/
+}
+
+.stars i{
+    font-size: 1.2rem;
+    color: #695a49;
+}
+
+.content-card-product h3{
+    grid-row: 2/3; /*Ocupa a segunda linha da grade*/
+    grid-column: 1/-1;
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+
+.content-card-product h3:hover{
+    color: #695a49;
+}
+
+.add-cart{
+    justify-self: start; /*Alinha o botão ao início horizontalmente*/
+    border: 2px solid #695a49;
+    padding: 1rem;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.add-cart:hover{
+    background-color: #695a49;
+}
+
+.add-cart i{
+    font-size: 0.9rem;
+    color: #695a49;
+}
+
+.add-cart:hover i{
+    color: white;
+}
+
+.content-card-product .price{
+    justify-self: end; /*Alinha o preço ao final horizontalmente*/
+    align-self: center; /*Centraliza o preço verticalmente*/
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.content-card-product .price span{
+    font-size: 0.8rem;
+    font-weight: 400;
+    text-decoration: line-through; /*Aplica um risco sobre o preço*/
+    color: #777;
+    margin-left: 0.5rem;
+}
+
+
+/*******************************************************************************************************************************************/
+/*                                                              LOCALIZAÇÃO                                                                */
+/*******************************************************************************************************************************************/
+
+.local{
+    display: flex;
+    gap: 2rem;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+form{
+    width: 100%;
+    max-width: 400px; /*Define a largura máxima do formulário*/
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: white;
+    border-radius: 20px;
+}
+
+/*******************************************************************************************************************************************/
+/*                                                              INFORMATIVOS                                                               */
+/*******************************************************************************************************************************************/
+
+.blogs {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+
+}
+
+.container-blogs {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 3rem;
+}
+
+.card-blog {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	margin: 40px 20px;
+	padding: 20px 30px 0px 30px;
+	background-color: #F9F5F0;
+	border-radius: 30px;
+	justify-content: center;
+	align-items: center;
+}
+
+.card-blog .container-img {
+	border-radius: 10px;
+	cursor: pointer;
+	position: relative;
+	overflow: hidden;
+}
+
+.container-img {
+	border-radius: 10px;
+}
+.button-group-blog {
+	position: absolute;
+	bottom: 1.2rem;
+	right: -2.5rem;
+	display: flex;
+	gap: 0.7rem;
+	z-index: -1;
+	transition: all 0.3s ease;
+}
+
+.card-blog:hover .button-group-blog {
+	z-index: 0;
+	right: 1.5rem;
+}
+
+.button-group-blog span{
+	background-color: #fff;
+	padding: 1rem;
+	border-radius: 50%;
+	transition: all 0.4s ease;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.button-group-blog span i{
+    font-size: 1.3rem;
+}
+
+.button-group-blog span:hover i{
+    background-color: white;
+}
+
+
+.button-group-blog span:hover{
+    background-color: #000000;
+}
+
+.content-blog h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1.2rem;
+    color: #edab5f;
+    font-weight: 400;
+}
+
+.content-blog h3:hover {
+    color: #ff8800;
+    cursor: pointer;
+}
+
+.content-blog p{
+    margin-top: 1rem;
+    font-size: 1.4rem;
+    color: #777;
+}
+
+.content-blog span{
+    color: #c7a17a;
+    font-size: 1.3rem;
+}
+
+.btn-read-more{
+    padding: 1rem 3rem;
+    background-color:#c7a17a;
+    color: white;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    border-radius:2rem;
+    margin: 2rem 0 5rem;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.btn-read-more:hover{
+    background-color: #000000;
+}
+
+/*******************************************************************************************************************************************/
+/*                                                               RODAPÉ                                                                    */
+/*******************************************************************************************************************************************/
+
+.footer {
+	background-color: #695a49;
+}
+
+.container-footer {
+	display: flex;
+	flex-direction: column;
+	gap: 4rem;
+	padding: 3rem;
+	background-color: #c7a17a;
+}
+
+.menu-footer {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr) 30rem;
+	gap: 3rem;
+	justify-items: center;
+}
+
+.title-footer {
+	font-weight: 600;
+	font-size: 0.9rem;
+	text-transform: uppercase;
+}
+
+.contact-info,
+.information,
+.my-account,
+.newsletter {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+}
+
+.contact-info ul,
+.information ul,
+.my-account ul {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+
+.contact-info ul li,
+.information ul li,
+.my-account ul li {
+	list-style: none;
+	color: #fff;
+	font-size: 0.9rem;
+	font-weight: 300;
+}
+
+.information ul li a,
+.my-account ul li a {
+	text-decoration: none;
+	color: #fff;
+	font-weight: 300;
+}
+
+.information ul li a:hover,
+.my-account ul li a:hover {
+	color: black;
+}
+
+.social-icons {
+	display: flex;
+	gap: 1.5rem;
+}
+
+.social-icons span {
+	border-radius: 50%;
+	width: 3rem;
+	height: 3rem;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.social-icons span i {
+	color: #fff;
+	font-size: 1.4rem;
+}
+
+.facebook {
+	background-color: #3b5998;
+}
+
+.twitter {
+	background-color: #00acee;
+}
+
+.youtube {
+	background-color: #c4302b;
+}
+
+.pinterest {
+	background-color: #c8232c;
+}
+
+.instagram {
+	background: linear-gradient(
+		#405de6,
+		#833ab4,
+		#c13584,
+		#e1306c,
+		#fd1d1d,
+		#f56040,
+		#fcaf45
+	);
+}
+
+.content p {
+	font-size: 0.8rem;
+	color: #fff;
+	font-weight: 300;
+}
+
+.content input {
+	outline: none;
+	background: none;
+	border: none;
+	border-bottom: 2px solid #d2b495;
+	cursor: pointer;
+	padding: 0.5rem 0 1.2rem;
+	color: black;
+	display: block;
+	margin-bottom: 3rem;
+	margin-top: 2rem;
+	width: 100%;
+	font-family: inherit;
+}
+
+.content input::-webkit-input-placeholder {
+	color: #eee;
+}
+
+.content button {
+	border: none;
+	background-color: #000;
+	color: #fff;
+	text-transform: uppercase;
+	padding: 1rem 3rem;
+	border-radius: 2rem;
+	font-size: 0.9rem;
+	font-family: inherit;
+	cursor: pointer;
+	font-weight: 400;
+}
+
+.content button:hover {
+	background-color:#695A49;
+	color: white;
+}
+
+.copyright {
+	display: flex;
+	justify-content: space-between;
+	padding-top: 2rem;
+	border-top: 1px solid #d2b495;
+	justify-content: center;
+	align-items: center;
+}
+
+.copyright p {
+	font-weight: 400;
+	font-size: 1.1rem;
+}
+
+/*******************************************************************************************************************************************/
+/*                                                        MEDIA QUERIES -- 768px                                                           */
+/*******************************************************************************************************************************************/
+
+@media (max-width: 768px) {
+	html {
+		font-size: 55%;
+	}
+
+	.hero {
+		padding: 2rem;
+	}
+
+	.customer-support {
+		display: none;
+	}
+
+	.content-shopping-cart {
+		display: none;
+	}
+
+	.navbar {
+		padding: 1rem 2rem;
+	}
+
+	.navbar .fa-bars {
+		display: block;
+		color: #fff;
+		font-size: 3rem;
+	}
+
+	.menu {
+		display: none;
+	}
+
+	.content-banner {
+		max-width: 50rem;
+		margin: 0 auto;
+		padding: 25rem 0;
+	}
+
+	.container-features {
+		grid-template-columns: repeat(2, 1fr);
+		padding: 3rem 2rem;
+	}
+
+	.card-feature {
+		padding: 2rem;
+	}
+
+	.heading-1 {
+		font-size: 2.4rem;
+	}
+
+	.card-category {
+		height: 12rem;
+	}
+
+	.card-category p {
+		font-size: 2rem;
+		text-align: center;
+		line-height: 1;
+	}
+
+	.card-category span {
+		font-size: 1.4rem;
+	}
+
+	.container-options {
+		align-items: center;
+	}
+
+	.container-options span {
+		text-align: center;
+		padding: 1rem 2rem;
+	}
+
+	.container-products {
+		grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+	}
+
+	.gallery {
+		grid-template-rows: repeat(2, 15rem);
+	}
+
+	.container-blogs {
+		overflow: hidden;
+		grid-template-columns: 1fr 1fr;
+
+		height: 52rem;
+	}
+
+	.menu-footer {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.copyright {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 1.5rem;
+	}
+}
+
+/*******************************************************************************************************************************************/
+/*                                                       MEDIA QUERIES -- 468px                                                            */
+/*******************************************************************************************************************************************/
+
+@media (max-width: 468px) {
+	html {
+		font-size: 42.5%;
+	}
+
+	.content-banner {
+		max-width: 50rem;
+		padding: 22rem 0;
+	}
+
+	.heading-1 {
+		font-size: 2.8rem;
+	}
+
+	.card-feature {
+		flex-direction: column;
+		border-radius: 2rem;
+	}
+
+	.feature-content {
+		align-items: center;
+	}
+
+	.feature-content p {
+		font-size: 1.4rem;
+		text-align: center;
+	}
+
+	.feature-content span {
+		font-size: 1.6rem;
+		text-align: center;
+	}
+
+	.container-options span {
+		font-size: 1.8rem;
+		padding: 1rem 1.5rem;
+		font-weight: 500;
+	}
+
+	.container-products {
+		grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+		gap: 1rem;
+	}
+
+	.container-img .discount {
+		font-size: 2rem;
+	}
+
+	.content-card-product h3 {
+		font-size: 2.2rem;
+	}
+
+	.gallery {
+		grid-template-rows: repeat(2, 20rem);
+	}
+
+	.blogs {
+		padding: 2rem;
+	}
+
+	.container-blogs {
+		grid-template-columns: 1fr;
+		height: 75rem;
+	}
+
+	.content-blog h3 {
+		font-size: 2.4rem;
+	}
+
+	.content-blog span {
+		font-size: 1.8rem;
+	}
+
+	.content-blog p {
+		font-size: 2.2rem;
+	}
+
+	.btn-read-more{
+		font-size: 1.8rem;
+	}
+
+	.contact-info ul,
+	.information ul,
+	.my-account ul{
+		display: none;
+	}
+
+	.contact-info {
+		align-items: center;
+	}
+
+	.menu-footer{
+		grid-template-columns: 1fr;
+	}
+
+	.content p{
+		font-size: 1.6rem;
+	}
+}
+
+/*****************************************COMEÇA O CARROSEL DE IMAGENS******************************************************/
+
+.carousel-wrapper {
+    height: 520px;
+    position: relative;
+    width: 1519px;
+    display: block;
+    margin: 0px;
+  }
+  
+  .carousel-item {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 25px 50px;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+  }
+  .arrow{
+    border: solid rgb(255, 255, 255);
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 12px;
+  }
+  .arrow-prev {
+    left: 30px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) rotate(135deg);
+  
+  }
+  .arrow-next {
+    right: 30px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) rotate(-45deg);
+  }
+  
+  [id^= "item"] {
+    display: none;
+  }
+  .item-1 {
+    z-index: 2;
+    opacity: 1;
+    background: url('imagens/gumbo\ da\ casa.png');
+    background-size: cover;
+    height: 600px;
+    border: 2px solid rgb(255, 255, 255);
+  }
+  .item-2 {
+    background: url('imagens/beignets\ da\ tiana.png');
+    background-size: cover;
+    height: 600px;
+    border: 2px solid rgb(255, 255, 255);
+  }
+  
+  *:target ~ .item-1{
+    opacity: 0;
+  }
+  #item-1:target ~ .item-1 {
+    opacity: 1;
+  
+  }
+  #item-2:target ~ .item-2{
+    z-index: 3;
+    opacity: 1;
+  }
+
+/*****************************************TERMINA O CARROSEL DE IMAGENS******************************************************/

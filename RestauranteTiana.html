@@ -1,0 +1,1030 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiana's Palace</title>
+    <link rel="stylesheet" href="stylerestaurante.css">
+    <link rel="icon" type="image/x-icon" href="imagens/iconerestaurante.png">
+</head>
+
+<body>
+    <header>
+        <div class="principal">
+            <div>
+                <div class="suporte">
+                    <img src="Icones/call.png" alt="Atendimento ao Cliente" width="80px" height="80px">
+                    <div class="suportecliente">
+                        <span Suporte ao Cliente>Suporte ao Cliente</span>
+                    </div>
+                    <div class="logo">
+                        <img src="imagens/nomerestaurante.png" alt="Logotipo do restaurante" width="600px"
+                            height="400px">
+                    </div>
+                    <div class="alinhar">
+                        <img src="Icones/entrar.png" alt="Entrar com as credenciais de acesso" width="70px"
+                            height="70px">
+                        <img src="Icones/carrinho.png" alt="Carrinho de Compras" width="70px" height="70px">
+                        <h4 class="suportecliente">Carrinho (0)</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div>
+        <nav>
+            <ul class="menu">
+                <li><a href="#sobre">SOBRE</a></li>
+                <li><a href="#produtos">MENU</a></li>
+                <li><a href="#destaques">DESTAQUES</a></li>
+                <li><a href="#localização">LOCALIZAÇÃO</a></li>
+                <li><a href="#contatos">CONTATOS</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <section class="banner">
+        <div class="txtbanner">
+            <p>Tudo pode acontecer.</p>
+            <h2>Ver um sonho realizado<br>só depende de você.</h2>
+            <a href="#sobre">Saiba mais.</a>
+        </div>
+    </section>
+
+    <!-- INICIA AS TAGS E O MAIN PRINCIPAL -->
+    <main class="main-conteudo"> <!--Tag main conteúdo principal dentro do site-->
+        <section class="base-conteudo">
+            <div class="align">
+                <div class="card">
+                    <img src="Icones/cardapio.png" alt="Ícone cardápio" width="80px" height="80px">
+                    <div class="conteudo">
+                        <span>Cardápio</span>
+                        <p>Conheça nossos pratos!</p>
+                    </div>
+                </div>
+
+
+                <div class="card">
+                    <img src="Icones/reserva.png" alt="Ícone Reserva" width="80px" height="80px">
+                    <div class="conteudo">
+                        <span>Faça a sua Reserva</span>
+                        <p>Não perca a oportunidade!</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="Icones/novidades.png" alt="Ícone novidades" width="80px" height="80px">
+                    <div class="conteudo">
+                        <span>Novidades</span>
+                        <p>O que há de novo?</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="Icones/avaliação.png" alt="Ícone avaliação" width="80px" height="80px">
+                    <div class="conteudo">
+                        <span>O melhor da cidade</span>
+                        <p>Uma referência em qualidade e sabor na cidade!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="sobre">
+
+            <h1 class="titulosobre">BEM VINDO AO TIANA'S PALACE</h1>
+            <div class="just">
+                <div class="texto">
+                    <h2>Bem-vindos ao Tiana’s Palace, o famoso restaurante inspirado na rica culinária de Nova Orleans,
+                        onde cada prato é preparado com amor e tradição! Fundado pela princesa Tiana, o restaurante não
+                        é apenas um espaço para saborear pratos autênticos do sul dos Estados Unidos, mas também um
+                        local
+                        cheio de história, superação e sonhos realizados.
+                    </h2> <br>
+                    <br>
+                    <br>
+                    <div>
+                        <img src="imagens/sobreorestaurante.png" alt="Imagens da cafeteria de cafés tradicionais."
+                            width="650px" height="650px" linear-gradiente(100deg, #000000, #000020)>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="tipos" id="destaques">
+            <h1 class="titulosobre">DESTAQUES</h1>
+            <div class="container-categoria">
+
+                <!-----------------------------------------------COMEÇA O CARROSEL DE IMAGENS----------------------------------->
+                <div class="carousel-wrapper">
+                    <span id="item-1"></span>
+                    <span id="item-2"></span>
+                    <div class="carousel-item item-1">
+                        <a href="#item-2" class="arrow-prev arrow"></a>
+                        <a href="#item-2" class="arrow-next arrow"></a>
+                    </div>
+
+                    <div class="carousel-item item-2">
+                        <a href="#item-1" class="arrow-prev arrow"></a>
+                        <a href="#item-1" class="arrow-next arrow"></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--AQUI INICIA-SE A GRID DE PRODUTOS-->
+        <section class="conteiner top-produtos" id="produtos">
+            <h1 class="titulosobre">MENU</h1>
+
+            <div class="conteiner-options">
+                <span>Destaques</span>
+                <span>Mais recentes</span>
+                <span>Mais vendidos</span>
+            </div>
+
+            <!--Container contendo todos os produtos em grid-->
+            <div class="container-produtos">
+                <!--PRODUTO 1-->
+                <div class="card-product">
+                    <div class="conteiner-img">
+                        <span class="discount">-13%</span>
+                        <img src="imagens/Crawfish Boil.png" alt="Lagostim Fervido">
+
+                        <div class="button-group">
+                            <span>
+                                <i class="fa-regular fa-eye"></i>
+                            </span>
+                            <span>
+                                <i class="fa-regular fa-heart"></i>
+                            </span>
+                            <span>
+                                <i class="fa-solid fa-code-compare"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="content-card-product">
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <h3>Lagostim Fervido</h3>
+                        <span class="add-cart">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </span>
+                        <p class="price">R$80,90<span>R$93,90</span></p>
+                    </div>
+                </div>
+                <!--PRODUTO 2-->
+                <div class="card-product">
+                    <div class="conteiner-img">
+                        <span class="discount">-16%</span>
+                        <img src="imagens/Arroz com feijão vermelho e linguiça.png"
+                            alt="Arroz com feijão vermelho e linguiça">
+
+                        <div class="button-group">
+                            <span>
+                                <i class="fa-regular fa-eye"></i>
+                            </span>
+                            <span>
+                                <i class="fa-regular fa-heart"></i>
+                            </span>
+                            <span>
+                                <i class="fa-solid fa-code-compare"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="content-card-product">
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <h3>Arroz com feijão vermelho e linguiça</h3>
+                        <span class="add-cart">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </span>
+                        <p class="price">R$33,90<span>R$45,90</span></p>
+                    </div>
+                </div>
+                <!--PRODUTO 3-->
+                <div class="card-product">
+                    <div class="conteiner-img">
+                        <span class="discount">-14%</span>
+                        <img src="imagens/Jambalaya.png" alt="Jambalaya">
+
+                        <div class="button-group">
+                            <span>
+                                <i class="fa-regular fa-eye"></i>
+                            </span>
+                            <span>
+                                <i class="fa-regular fa-heart"></i>
+                            </span>
+                            <span>
+                                <i class="fa-solid fa-code-compare"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="content-card-product">
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <h3>Jambalaya</h3>
+                        <span class="add-cart">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </span>
+                        <p class="price">R$73,90<span>R$86,90</span></p>
+                    </div>
+                </div>
+                <!--PRODUTO 4-->
+                <div class="card-product">
+                    <div class="conteiner-img">
+                        <span class="discount">-16%</span>
+                        <img src="imagens/Po'boy.png" alt="Po'Boy">
+
+                        <div class="button-group">
+                            <span>
+                                <i class="fa-regular fa-eye"></i>
+                            </span>
+                            <span>
+                                <i class="fa-regular fa-heart"></i>
+                            </span>
+                            <span>
+                                <i class="fa-solid fa-code-compare"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="content-card-product">
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <h3>Po'Boy</h3>
+                        <span class="add-cart">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </span>
+                        <p class="price">R$29,90 <span>R$35,90</span></p>
+                    </div>
+                </div>
+                <!--PRODUTO 5-->
+                <div class="card-product">
+                    <div class="conteiner-img">
+                        <span class="discount">-17%</span>
+                        <img src="imagens/Carangueijo Cozido com limão.png" alt="Carangueijo Cozido com limão">
+
+                        <div class="button-group">
+                            <span>
+                                <i class="fa-regular fa-eye"></i>
+                            </span>
+                            <span>
+                                <i class="fa-regular fa-heart"></i>
+                            </span>
+                            <span>
+                                <i class="fa-solid fa-code-compare"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="content-card-product">
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <h3>Carangueijo Cozido com limão</h3>
+                        <span class="add-cart">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </span>
+                        <p class="price">R$77,20 <span>R$63,90</span></p>
+                    </div>
+                </div>
+                <!--PRODUTO 6-->
+                <div class="card-product">
+                    <div class="conteiner-img">
+                        <span class="discount">-22%</span>
+                        <img src="imagens/Porção de camarão.png" alt="Porção de camarão">
+
+                        <div class="button-group">
+                            <span>
+                                <i class="fa-regular fa-eye"></i>
+                            </span>
+                            <span>
+                                <i class="fa-regular fa-heart"></i>
+                            </span>
+                            <span>
+                                <i class="fa-solid fa-code-compare"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="content-card-product">
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <h3>Porção de camarão</h3>
+                        <span class="add-cart">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </span>
+                        <p class="price">R$53,60 <span>R$69,90</span></p>
+                    </div>
+                </div>
+                <!--PRODUTO 7-->
+                <div class="card-product">
+                    <div class="conteiner-img">
+                        <span class="discount">-15%</span>
+                        <img src="imagens/etouffee.png" alt="Étouffeé">
+
+                        <div class="button-group">
+                            <span>
+                                <i class="fa-regular fa-eye"></i>
+                            </span>
+                            <span>
+                                <i class="fa-regular fa-heart"></i>
+                            </span>
+                            <span>
+                                <i class="fa-solid fa-code-compare"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="content-card-product">
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <h3>Étouffeé</h3>
+                        <span class="add-cart">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </span>
+                        <p class="price">R$57,30<span>R$68,90</span></p>
+                    </div>
+                </div>
+                <!--PRODUTO 8-->
+                <div class="card-product">
+                    <div class="conteiner-img">
+                        <span class="discount">-10%</span>
+                        <img src="imagens/Lagosta Cozida.png" alt="Lagosta Cozida">
+
+                        <div class="button-group">
+                            <span>
+                                <i class="fa-regular fa-eye"></i>
+                            </span>
+                            <span>
+                                <i class="fa-regular fa-heart"></i>
+                            </span>
+                            <span>
+                                <i class="fa-solid fa-code-compare"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="content-card-product">
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <h3>Lagosta Cozida</h3>
+                        <span class="add-cart">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </span>
+                        <p class="price">R$79,90 <span>R$88,90</span></p>
+                    </div>
+                </div>
+                <!--PRODUTO 9-->
+                <div class="card-product">
+                    <div class="conteiner-img">
+                        <span class="discount">-4%</span>
+                        <img src="imagens/Ostras Gratinadas.png" alt="Ostras Gratinadas">
+
+                        <div class="button-group">
+                            <span>
+                                <i class="fa-regular fa-eye"></i>
+                            </span>
+                            <span>
+                                <i class="fa-regular fa-heart"></i>
+                            </span>
+                            <span>
+                                <i class="fa-solid fa-code-compare"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="content-card-product">
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <h3>Ostras Gratinadas</h3>
+                        <span class="add-cart">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </span>
+                        <p class="price">R$89,90 <span>R$93,90</span></p>
+                    </div>
+                </div>
+                <!--PRODUTO 10-->
+                <div class="card-product">
+                    <div class="conteiner-img">
+                        <span class="discount">-15%</span>
+                        <img src="imagens/Peixe Grelhado.png" alt="Peixe Grelhado">
+
+                        <div class="button-group">
+                            <span>
+                                <i class="fa-regular fa-eye"></i>
+                            </span>
+                            <span>
+                                <i class="fa-regular fa-heart"></i>
+                            </span>
+                            <span>
+                                <i class="fa-solid fa-code-compare"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="content-card-product">
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <h3>Peixe Grelhado</h3>
+                        <span class="add-cart">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </span>
+                        <p class="price">R$63,90 <span>R$75,60</span></p>
+                    </div>
+                </div>
+                <!--PRODUTO 11-->
+                <div class="card-product">
+                    <div class="conteiner-img">
+                        <span class="discount">-9%</span>
+                        <img src="imagens/Lula Refogada.png" alt="Lula Refogada">
+
+                        <div class="button-group">
+                            <span>
+                                <i class="fa-regular fa-eye"></i>
+                            </span>
+                            <span>
+                                <i class="fa-regular fa-heart"></i>
+                            </span>
+                            <span>
+                                <i class="fa-solid fa-code-compare"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="content-card-product">
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <h3>Lula Refogada</h3>
+                        <span class="add-cart">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </span>
+                        <p class="price">R$84,90 <span>R$93,99</span></p>
+                    </div>
+                </div>
+                <!--PRODUTO 12-->
+                <div class="card-product">
+                    <div class="conteiner-img">
+                        <span class="discount">-18%</span>
+                        <img src="imagens/Sopa de Camarão.png" alt="Sopa de Camarão">
+
+                        <div class="button-group">
+                            <span>
+                                <i class="fa-regular fa-eye"></i>
+                            </span>
+                            <span>
+                                <i class="fa-regular fa-heart"></i>
+                            </span>
+                            <span>
+                                <i class="fa-solid fa-code-compare"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="content-card-product">
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <h3>Sopa de Camarão</h3>
+                        <span class="add-cart">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </span>
+                        <p class="price">R$53,90 <span>R$65,90</span></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="conteiner-options">
+                <span>Mostrar mais pratos</span>
+            </div>
+
+        </section>
+
+        <section class="conteiner top-produtos" id="produtos">
+            <h1 class="titulosobre">COQUETEIS</h1>
+
+            <div class="conteiner-options">
+                <span>Destaques</span>
+                <span>Mais recentes</span>
+                <span>Mais vendidos</span>
+            </div>
+
+            <!--Container contendo todos os produtos em grid-->
+            <div class="container-produtos">
+                <!--PRODUTO 1-->
+                <div class="card-product">
+                    <div class="conteiner-img">
+                        <span class="discount">-17%</span>
+                        <img src="imagens/Aerol Spritz.png" alt="Aerol Spritz">
+
+                        <div class="button-group">
+                            <span>
+                                <i class="fa-regular fa-eye"></i>
+                            </span>
+                            <span>
+                                <i class="fa-regular fa-heart"></i>
+                            </span>
+                            <span>
+                                <i class="fa-solid fa-code-compare"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="content-card-product">
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <h3>Aerol Spritz</h3>
+                        <span class="add-cart">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </span>
+                        <p class="price">R$15,50 <span>R$18,90</span></p>
+                    </div>
+                </div>
+                <!--PRODUTO 2-->
+                <div class="card-product">
+                    <div class="conteiner-img">
+                        <span class="discount">-16%</span>
+                        <img src="imagens/Cold Toddy.png" alt="Cold Toddy">
+
+                        <div class="button-group">
+                            <span>
+                                <i class="fa-regular fa-eye"></i>
+                            </span>
+                            <span>
+                                <i class="fa-regular fa-heart"></i>
+                            </span>
+                            <span>
+                                <i class="fa-solid fa-code-compare"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="content-card-product">
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <h3>Cold Toddy</h3>
+                        <span class="add-cart">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </span>
+                        <p class="price">R$16,60 <span>R$19,80</span></p>
+                    </div>
+                </div>
+                <!--PRODUTO 3-->
+                <div class="card-product">
+                    <div class="conteiner-img">
+                        <span class="discount">-13%</span>
+                        <img src="imagens/Lavender Lemonade.png" alt="Lavender Lemonade">
+
+                        <div class="button-group">
+                            <span>
+                                <i class="fa-regular fa-eye"></i>
+                            </span>
+                            <span>
+                                <i class="fa-regular fa-heart"></i>
+                            </span>
+                            <span>
+                                <i class="fa-solid fa-code-compare"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="content-card-product">
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <h3>Lavender Lemonade</h3>
+                        <span class="add-cart">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </span>
+                        <p class="price">R$14,90 <span>R$16,90</span></p>
+                    </div>
+                </div>
+                <!--PRODUTO 4-->
+                <div class="card-product">
+                    <div class="conteiner-img">
+                        <span class="discount">-14%</span>
+                        <img src="imagens/Dry Martíni.png" alt="Dry Martíni">
+
+                        <div class="button-group">
+                            <span>
+                                <i class="fa-regular fa-eye"></i>
+                            </span>
+                            <span>
+                                <i class="fa-regular fa-heart"></i>
+                            </span>
+                            <span>
+                                <i class="fa-solid fa-code-compare"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="content-card-product">
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <h3>Dry Martíni</h3>
+                        <span class="add-cart">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </span>
+                        <p class="price">R$22,90 <span>R$26,90</span></p>
+                    </div>
+                </div>
+                <!--PRODUTO 5-->
+                <div class="card-product">
+                    <div class="conteiner-img">
+                        <span class="discount">-9%</span>
+                        <img src="imagens/Mojito.png" alt="Mojito">
+
+                        <div class="button-group">
+                            <span>
+                                <i class="fa-regular fa-eye"></i>
+                            </span>
+                            <span>
+                                <i class="fa-regular fa-heart"></i>
+                            </span>
+                            <span>
+                                <i class="fa-solid fa-code-compare"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="content-card-product">
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <h3>Mojito</h3>
+                        <span class="add-cart">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </span>
+                        <p class="price">R$21,60<span>R$23,90</span></p>
+                    </div>
+                </div>
+                <!--PRODUTO 6-->
+                <div class="card-product">
+                    <div class="conteiner-img">
+                        <span class="discount">-11%</span>
+                        <img src="imagens/Blue Lagoon.png" alt="Blue Lagoon">
+
+                        <div class="button-group">
+                            <span>
+                                <i class="fa-regular fa-eye"></i>
+                            </span>
+                            <span>
+                                <i class="fa-regular fa-heart"></i>
+                            </span>
+                            <span>
+                                <i class="fa-solid fa-code-compare"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="content-card-product">
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <h3>Blue Lagoon</h3>
+                        <span class="add-cart">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </span>
+                        <p class="price">R$25,90 <span>R$28,90</span></p>
+                    </div>
+                </div>
+                <!--PRODUTO 7-->
+                <div class="card-product">
+                    <div class="conteiner-img">
+                        <span class="discount">-16%</span>
+                        <img src="imagens/Pisco Sour.png" alt="Pisco Sour">
+
+                        <div class="button-group">
+                            <span>
+                                <i class="fa-regular fa-eye"></i>
+                            </span>
+                            <span>
+                                <i class="fa-regular fa-heart"></i>
+                            </span>
+                            <span>
+                                <i class="fa-solid fa-code-compare"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="content-card-product">
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <h3>Pisco Sour</h3>
+                        <span class="add-cart">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </span>
+                        <p class="price">R$15,87 <span>R$18,90</span></p>
+                    </div>
+                </div>
+                <!--PRODUTO 8-->
+                <div class="card-product">
+                    <div class="conteiner-img">
+                        <span class="discount">-10%</span>
+                        <img src="imagens/Cosmopolitan.png" alt="Cosmopolitan">
+
+                        <div class="button-group">
+                            <span>
+                                <i class="fa-regular fa-eye"></i>
+                            </span>
+                            <span>
+                                <i class="fa-regular fa-heart"></i>
+                            </span>
+                            <span>
+                                <i class="fa-solid fa-code-compare"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="content-card-product">
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <h3>Cosmopolitan</h3>
+                        <span class="add-cart">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </span>
+                        <p class="price">R$26,00 <span>R$28,90</span></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="conteiner-options">
+                <span>Mostrar mais produtos</span>
+            </div>
+
+        </section>
+
+    <section id="localização">
+        <h1 class="titulosobre">LOCALIZACAO</h1>
+        <section class="local">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3315.0418577457463!2d-117.92411782504107!3d33.811232873248734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dcd7daed9c332b%3A0x60a411adf0d39e91!2sTiana&#39;s%20Palace!5e0!3m2!1spt-BR!2sbr!4v1726533723746!5m2!1spt-BR!2sbr"
+                width="900" height="450" style="border: 3 px solid black; border-radius: 20px; box-shadow: 3.5rem;"
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </section>
+    </section>
+
+        <section class="container blogs">
+            <h1 class="titulosobre">SAIBA MAIS</h1>
+            <div class="container-blogs">
+                <div class="card-blog">
+
+                    <div class="conteiner-img">
+                        <img src="imagens/um sonho.jpg" alt="Sonho da Tiana">
+                        <div class="button-group-blog">
+                            <span>
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </span>
+                            <span>
+                                <i class="fa-solid fa-link"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="content-blog">
+                        <h3>Um Sonho Cozinhado com Amor</h3>
+                        <span>11 Setembro de 2024</span>
+                        <p>
+                            Criada no coração de Nova Orleans, Tiana cresceu vendo sua mãe trabalhar como costureira
+                            para famílias ricas,
+                            enquanto seu pai, um grande amante da culinária, ensinava a ela a paixão pela comida.
+                            Juntos, eles compartilhavam o desejo de um dia ter um restaurante onde todos pudessem
+                            saborear refeições caseiras com toques especiais de amor. <br>
+
+                            Mas o caminho não foi fácil. Tiana trabalhou arduamente em vários empregos, economizando
+                            cada centavo para realizar esse grande sonho. Sua jornada foi cheia de desafios e, no fim,
+                            com determinação e apoio de amigos, Tiana finalmente conseguiu transformar seu sonho em
+                            realidade.
+                        </p>
+                        <div class="btn-read-more">Ler Mais</div>
+                    </div>
+                </div>
+                <div class="card-blog">
+
+                    <div class="conteiner-img">
+                        <img src="imagens/o ambiente.jpg" alt="Imagem do ambiente do restaurante.">
+                        <div class="button-group-blog">
+                            <span>
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </span>
+                            <span>
+                                <i class="fa-solid fa-link"></i>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="content-blog">
+                        <h3>O Ambiente</h3>
+                        <span>11 Setembro de 2024</span>
+                        <p>
+                            Assim como a própria Tiana, o restaurante é cheio de vida, cores vibrantes
+                            e uma atmosfera calorosa. Inspirado na arquitetura tradicional de Nova Orleans,
+                            com toques de elegância e detalhes artísticos, o local combina charme vintage com
+                            modernidade. O Tiana’s Palace também celebra a música da cidade, com apresentações
+                            ao vivo de jazz, blues e ritmos que fazem de Nova Orleans um lugar tão especial. <br>
+
+                            O restaurante, além de ser um templo da boa culinária, é um símbolo de resiliência
+                            e realização de sonhos. Cada visita ao Tiana’s Palace não é apenas uma refeição,
+                            mas uma experiência completa, repleta de história, música, cultura e um toque de magia
+                            que só Nova Orleans e Tiana podem oferecer.
+                        </p>
+                        <div class="btn-read-more">Ler Mais</div>
+                    </div>
+                </div>
+                <div class="card-blog">
+
+                    <div class="conteiner-img">
+                        <img src="imagens/tianacozinhando2.jpg" alt="Imagem da Tiana cozinhando.">
+                        <div class="button-group-blog">
+                            <span>
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </span>
+                            <span>
+                                <i class="fa-solid fa-link"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="content-blog">
+                        <h3>A Culinária</h3>
+                        <span>11 Setembro de 2024</span>
+                        <p>
+                            A comida é a alma do restaurante. O cardápio traz pratos típicos do sul,
+                            com o toque especial de Tiana. Entre os mais famosos, você encontrará o gumbo
+                            (ensopado de frutos do mar e carnes), o clássico jambalaya e, claro, os famosos beignets,
+                            que são bolinhos fritos cobertos de açúcar de confeiteiro, perfeitos para adoçar qualquer
+                            momento. <br>
+
+                            Cada prato é cuidadosamente preparado para que os clientes sintam não só o sabor, mas também
+                            o carinho
+                            e a paixão que Tiana coloca em sua culinária. Aqui, cada refeição é uma celebração da
+                            cultura de Nova Orleans
+                            e um convite para apreciar os sabores e histórias que fazem parte dessa cidade única.
+                        </p>
+                        <div class="btn-read-more">Ler Mais</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+<section  id="contatos">
+    <footer class="footer">
+        <div class="container container-footer">
+            <div class="menu-footer">
+                <div class="contact-info">
+                    <p class="title-footer">Informações de contato</p>
+                    <ul>
+                        <li>
+                            1313 S Harbor Blvd, Anaheim, <br> CA 92802, Estados Unidos
+                        </li>
+                        <li>Telefone: (555) 1234-5678</li>
+                        <li>Email: Tianapalace@gmail.com</li>
+                    </ul>
+                    <div class="social-icons">
+                        <span class="facebook">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </span>
+                        <span class="twitter">
+                            <i class="fa-brands fa-twitter"></i>
+                        </span>
+                        <span class="youtube">
+                            <i class="fa-brands fa-youtube"></i>
+                        </span>
+                        <span class="pinterest">
+                            <i class="fa-brands fa-pinterest-p"></i>
+                        </span>
+                        <span class="instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </span>
+                    </div>
+                </div>
+                <div class="information">
+                    <p class="title-footer">Informações</p>
+                    <ul>
+                        <li><a href="https://disneyland.disney.go.com/dining/disneyland/tianas-palace/">Sobre Nós</a></li>
+                        <li><a href="#">Termos e Condições</a></li>
+                        <li><a href="#">Contate-nos</a></li>
+                    </ul>
+                </div>
+
+                <div class="my-account">
+                    <p class="title-footer">Minha conta</p>
+
+                    <ul>
+                        <li><a href="#">Minha conta</a></li>
+                        <li><a href="#">Cartão Fidelidade</a></li>
+                        <li><a href="#">Reservas</a></li>
+                        <li><a href="#">Reembolsos</a></li>
+                    </ul>
+                </div>
+
+                <div class="newsletter">
+                    <p class="title-footer">newsletter</p>
+
+                    <div class="content">
+                        <p>
+                            Se inscreva para ter informações e ofertas exclusivas sobre o Tiana's Palace!
+                        </p>
+                        <input type="email" placeholder="Insira seu email aqui">
+                        <button>Inscreva-se</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="copyright">
+                <p>
+                    Tiana's Palace &copy; 2024
+                </p>
+
+                <img src="imagens/payment.png" alt="Pagos">
+            </div>
+        </div>
+    </footer>
+</section>
+
+
+
+    <script src="https://kit.fontawesome.com/81581fb069.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
